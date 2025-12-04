@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Lora
+- Font Title: Instrument Serif
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/lora/v36/0QI6MX1D_JOuGQbT0gvTJPa787weuyJGmKxemMeZ.ttf
+- Font Source: https://fonts.gstatic.com/s/instrumentserif/v4/jizBRFtNs2ka5fXjeivQ4LroWlx-2zIZj1bIkNo.ttf
 - Font License: undefined)
