@@ -1094,7 +1094,7 @@
             <h2>Interested in working together?</h2>
             <p class="subtitle">I work with organisations across the UK. If you have processes that feel like they should be simpler, let's talk.</p>
 
-            <form class="contact-form" action="https://formspree.io/f/mjknoeqd" method="POST">
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/mjknoeqd" method="POST">
                 <div class="form-group">
                     <label for="email">Your email</label>
                     <input type="email" id="email" name="email" placeholder="you@example.com" required>
@@ -1106,7 +1106,7 @@
                 </div>
 
                 <div class="form-submit">
-                    <button type="submit" class="btn btn-primary">Send message</button>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Send message</button>
                 </div>
             </form>
         </div>
@@ -1122,6 +1122,51 @@
             const project = element.closest('.project');
             project.classList.toggle('expanded');
         }
+
+        // Handle contact form submission
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = document.getElementById('submit-btn');
+            const originalText = submitBtn.textContent;
+
+            // Show sending state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            try {
+                // Submit to Formspree
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Show sent state
+                    submitBtn.textContent = 'Sent!';
+
+                    // Reset form after 3 seconds
+                    setTimeout(() => {
+                        form.reset();
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    }, 3000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                // Show error and reset
+                submitBtn.textContent = 'Failed - try again';
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 3000);
+            }
+        });
     </script>
 </body>
 </html>
