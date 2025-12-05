@@ -482,15 +482,10 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
-            cursor: pointer;
             padding: 24px;
             border: 1px solid var(--border);
             background: var(--bg);
             position: relative;
-        }
-
-        .project-summary:hover {
-            background: var(--bg-alt);
         }
 
         .project-header {
@@ -569,25 +564,8 @@
             text-overflow: ellipsis;
         }
 
-        .expand-icon {
-            width: 24px;
-            height: 24px;
-            color: var(--accent);
-            transition: transform 0.3s ease;
-        }
-
-        .project.expanded .expand-icon {
-            transform: rotate(180deg);
-        }
-
         .project-detail {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-
-        .project.expanded .project-detail {
-            max-height: 2000px;
+            display: block;
         }
 
         .project-content {
@@ -922,16 +900,13 @@
         </div>
 
         <article class="project">
-            <div class="project-summary" onclick="toggleProject(this)">
+            <div class="project-summary">
                 <div class="project-header">
                     <div class="project-meta">
                         <span class="project-category">Fundraising Automation</span>
                         <span class="project-separator">·</span>
                         <span class="project-client">Multi-million pound charitable enterprise</span>
                     </div>
-                    <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
                 </div>
                 <div class="project-stats">
                     <span class="project-stat"><span class="stat-label">Nov 2025</span></span>
@@ -951,16 +926,13 @@
         </article>
 
         <article class="project">
-            <div class="project-summary" onclick="toggleProject(this)">
+            <div class="project-summary">
                 <div class="project-header">
                     <div class="project-meta">
                         <span class="project-category">Production Tracking Automation</span>
                         <span class="project-separator">·</span>
                         <span class="project-client">Publishing house</span>
                     </div>
-                    <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
                 </div>
                 <div class="project-stats">
                     <span class="project-stat"><span class="stat-label">Nov 2025</span></span>
@@ -980,16 +952,13 @@
         </article>
 
         <article class="project">
-            <div class="project-summary" onclick="toggleProject(this)">
+            <div class="project-summary">
                 <div class="project-header">
                     <div class="project-meta">
                         <span class="project-category">Sales Data Restructuring</span>
                         <span class="project-separator">·</span>
                         <span class="project-client">Multi-million pound charitable enterprise</span>
                     </div>
-                    <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
                 </div>
                 <div class="project-stats">
                     <span class="project-stat"><span class="stat-label">Dec 2025</span></span>
@@ -1009,16 +978,13 @@
         </article>
 
         <article class="project">
-            <div class="project-summary" onclick="toggleProject(this)">
+            <div class="project-summary">
                 <div class="project-header">
                     <div class="project-meta">
                         <span class="project-category">Till Data Automation</span>
                         <span class="project-separator">·</span>
                         <span class="project-client">Multi-million pound charitable enterprise</span>
                     </div>
-                    <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
                 </div>
                 <div class="project-stats">
                     <span class="project-stat"><span class="stat-label">Dec 2025</span></span>
@@ -1048,16 +1014,13 @@
         </div>
 
         <article class="project">
-            <div class="project-summary" onclick="toggleProject(this)">
+            <div class="project-summary">
                 <div class="project-header">
                     <div class="project-meta">
                         <span class="project-category">Scripture Reference Checker</span>
                         <span class="project-separator">·</span>
                         <span class="project-client">Publishing house</span>
                     </div>
-                    <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
                 </div>
                 <div class="project-stats">
                     <span class="project-stat"><span class="stat-label">Dec 2025</span></span>
@@ -1071,16 +1034,13 @@
         </article>
 
         <article class="project">
-            <div class="project-summary" onclick="toggleProject(this)">
+            <div class="project-summary">
                 <div class="project-header">
                     <div class="project-meta">
                         <span class="project-category">Expense Processing Automation</span>
                         <span class="project-separator">·</span>
                         <span class="project-client">Multi-million pound charitable enterprise</span>
                     </div>
-                    <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
                 </div>
                 <div class="project-stats">
                     <span class="project-stat"><span class="stat-label">Dec 2025</span></span>
@@ -1158,11 +1118,6 @@
     </footer>
 
     <script>
-        function toggleProject(element) {
-            const project = element.closest('.project');
-            project.classList.toggle('expanded');
-        }
-
         // Handle contact form submission
         document.getElementById('contact-form').addEventListener('submit', async function(e) {
             e.preventDefault();
