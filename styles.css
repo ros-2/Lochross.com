@@ -848,7 +848,6 @@ h3 {
    =================================== */
 
 footer {
-    text-align: center;
     padding: 48px;
     color: var(--text-muted);
     font-size: 0.8rem;
@@ -856,13 +855,46 @@ footer {
     border-top: 1px solid var(--border);
 }
 
-footer a {
-    color: var(--text-muted);
-    text-decoration: none;
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
 }
 
-footer a:hover {
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h4 {
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.footer-column a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
     color: var(--accent);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-bottom p {
+    margin: 4px 0;
 }
 
 footer .footer-note {
@@ -1017,10 +1049,23 @@ footer .footer-note {
         justify-content: center;
         width: 100%;
     }
+
+    /* Footer */
+    .footer-nav {
+        gap: 48px;
+    }
 }
 
 @media (max-width: 500px) {
     .faq-question {
         font-size: 1.2rem;
+    }
+
+    /* Footer */
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        text-align: center;
     }
 }
