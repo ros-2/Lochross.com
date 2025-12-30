@@ -423,11 +423,13 @@
         .impact-box {
             background: var(--accent);
             color: white;
-            padding: 56px 48px;
+            padding: 64px 48px;
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .impact-box::before {
@@ -442,27 +444,23 @@
         }
 
         .impact-label {
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 0.12em;
-            opacity: 0.8;
-            margin-bottom: 16px;
+            opacity: 0.85;
+            margin-bottom: 24px;
+            max-width: 280px;
         }
 
         .impact-ratio {
-            margin-bottom: 12px;
+            margin: 0;
         }
 
         .impact-number {
             font-family: 'Instrument Serif', Georgia, serif;
-            font-size: 7rem;
+            font-size: 8rem;
             line-height: 1;
             letter-spacing: -0.03em;
-        }
-
-        .impact-explain {
-            font-size: 1.05rem;
-            opacity: 0.9;
         }
 
         /* Section */
@@ -1179,11 +1177,10 @@
         </div>
         
         <div class="impact-box">
-            <p class="impact-label">Return on every hour I invest</p>
+            <p class="impact-label">Return per year on every hour I invest</p>
             <div class="impact-ratio">
                 <span class="impact-number">10×</span>
             </div>
-            <p class="impact-explain">In saved staff time, year after year.</p>
         </div>
     </section>
 
