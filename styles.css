@@ -950,6 +950,31 @@ footer .footer-note {
         font-size: 1.2rem;
     }
 
+    /* Impact Label - Allow wrapping on small screens */
+    .impact-label {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+
+    .impact-number {
+        font-size: 4rem;
+    }
+
+    /* Navigation */
+    .nav-name {
+        font-size: 32px;
+    }
+
+    .nav-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Hero text adjustments */
+    h1 {
+        font-size: 2rem;
+    }
+
     /* Footer */
     .footer-nav {
         flex-direction: column;
