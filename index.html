@@ -258,9 +258,9 @@
         }
 
         :root {
-            --text: #1A1A1A;
-            --text-secondary: #333;
-            --text-muted: #666;
+            --text: #111827;
+            --text-secondary: #2f3a4a;
+            --text-muted: #5b6472;
             --bg: #FFFFFF;
             --bg-alt: #F4F4F4;
             --accent: #001F54;
@@ -281,8 +281,8 @@
             font-family: 'Open Sans', -apple-system, sans-serif;
             background-color: var(--bg);
             color: var(--text);
-            line-height: 1.65;
-            font-size: 16px;
+            line-height: 1.72;
+            font-size: 17px;
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
@@ -401,7 +401,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 3.2rem;
             font-weight: 800;
-            line-height: 1.12;
+            line-height: 1.18;
             margin-bottom: 24px;
             letter-spacing: -0.02em;
             color: var(--accent);
@@ -494,7 +494,8 @@
             font-weight: 700;
             letter-spacing: -0.01em;
             color: var(--accent);
-            line-height: 1.2;
+            line-height: 1.24;
+            text-wrap: balance;
         }
 
         .section-count {
@@ -639,8 +640,10 @@
 
         .project-content p {
             color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.7;
+            font-size: 1rem;
+            line-height: 1.75;
+            max-width: 70ch;
+            text-wrap: pretty;
         }
 
         .project-content strong {
@@ -883,9 +886,10 @@
 
         .about-text p {
             color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.7;
-            max-width: 640px;
+            font-size: 1.05rem;
+            line-height: 1.78;
+            max-width: 72ch;
+            text-wrap: pretty;
         }
 
         .industry-list {
@@ -934,9 +938,11 @@
 
         .pricing-info p {
             color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-bottom: 16px;
+            font-size: 1.02rem;
+            line-height: 1.75;
+            margin-bottom: 18px;
+            max-width: 72ch;
+            text-wrap: pretty;
         }
 
         .pricing-list {
@@ -1183,6 +1189,10 @@
                 min-height: 48px;
             }
 
+            body {
+                font-size: 16px;
+            }
+
             .benefits-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
@@ -1226,6 +1236,12 @@
 
             section {
                 padding: 72px 20px;
+            }
+
+            .about-text p,
+            .pricing-info p,
+            .project-content p {
+                max-width: none;
             }
         }
     </style>
