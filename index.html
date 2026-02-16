@@ -1059,6 +1059,35 @@
             margin-bottom: 6px;
         }
 
+        .fit-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .fit-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            background: var(--bg);
+            padding: 24px;
+        }
+
+        .fit-card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.2rem;
+        }
+
+        .fit-card ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .fit-card li {
+            margin-bottom: 6px;
+        }
+
         .testimonials h3 {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.5rem;
@@ -1198,6 +1227,10 @@
                 gap: 20px;
             }
 
+            .fit-grid {
+                grid-template-columns: 1fr;
+            }
+
             .benefit-card {
                 padding: 24px;
             }
@@ -1275,7 +1308,7 @@
             <p class="hero-credentials">Based in Scotland · Working with UK teams</p>
 
             <div class="hero-actions">
-                <a href="/pages/contact.html" class="btn btn-primary">Book a 20-min workflow review</a>
+                <a href="/pages/contact.html" class="btn btn-primary" data-cta="home-hero-book-review">Book a 20-min workflow review</a>
                 <a href="/pages/projects.html" class="btn btn-secondary">View case studies</a>
             </div>
 
@@ -1290,6 +1323,33 @@
             <p class="impact-label">Measured annual return on delivery time</p>
             <div class="impact-ratio">
                 <span class="impact-number">12×</span>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding-top: 36px;">
+        <div class="section-header">
+            <div>
+                <p class="section-label">Quick Fit Check</p>
+                <h2>Who this is for (and not for)</h2>
+            </div>
+        </div>
+        <div class="fit-grid">
+            <div class="fit-card">
+                <h3>Best fit</h3>
+                <ul>
+                    <li>Teams with repeated admin and document workflows.</li>
+                    <li>Leaders who want practical systems in weeks, not quarters.</li>
+                    <li>Organisations that value clear ownership and process reliability.</li>
+                </ul>
+            </div>
+            <div class="fit-card">
+                <h3>Not ideal</h3>
+                <ul>
+                    <li>Teams looking for a fully custom enterprise platform from day one.</li>
+                    <li>Projects with no clear workflow owner or decision-maker.</li>
+                    <li>Situations where process change cannot be adopted by staff.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -1423,7 +1483,7 @@
     <div class="cta-banner">
         <h3>If your team is spending hours on repeat admin, start here.</h3>
         <p>Send a short description of your workflow and I will reply with a practical next step.</p>
-        <a href="/pages/contact.html" class="btn btn-primary">Book a 20-min workflow review</a>
+        <a href="/pages/contact.html" class="btn btn-primary" data-cta="home-bottom-book-review">Book a 20-min workflow review</a>
     </div>
 
     </main>
@@ -1432,5 +1492,6 @@
         <p>Lochross · Scotland · <a href="mailto:philip@lochross.com">philip@lochross.com</a> · <a href="#top">Back to top ↑</a></p>
         <p class="footer-note">Working days based on 7.5-hour calculation (37.5-hour working week)</p>
     </footer>
+    <script src="/js/analytics-events.js"></script>
 </body>
 </html>

@@ -25,6 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
 
                 if (response.ok) {
+                    if (typeof window.gtag === 'function') {
+                        window.gtag('event', 'form_submit_success', {
+                            form_id: 'contact-form',
+                            page_path: window.location.pathname
+                        });
+                    }
+
                     // Show sent state
                     submitBtn.textContent = 'Sent! I\'ll reply within 24 hours';
 
@@ -38,6 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     throw new Error('Form submission failed');
                 }
             } catch (error) {
+                if (typeof window.gtag === 'function') {
+                    window.gtag('event', 'form_submit_error', {
+                        form_id: 'contact-form',
+                        page_path: window.location.pathname
+                    });
+                }
+
                 // Show error and reset
                 submitBtn.textContent = 'Failed - try again';
                 setTimeout(() => {
