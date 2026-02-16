@@ -268,6 +268,9 @@
             --accent-light: #E6EBF5;
             --accent-orange: #FF6F00;
             --border: #e2e2e0;
+            --radius-sm: 10px;
+            --radius-md: 14px;
+            --shadow-soft: 0 8px 28px rgba(0, 31, 84, 0.08);
         }
 
         html {
@@ -282,6 +285,7 @@
             font-size: 16px;
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
         }
 
         /* Navigation */
@@ -291,9 +295,9 @@
             left: 0;
             right: 0;
             background: var(--accent);
-            border-bottom: 1px solid var(--accent-mid);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.16);
             z-index: 100;
-            padding: 24px 48px;
+            padding: 18px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -306,7 +310,7 @@
             font-weight: 800;
             color: white;
             text-decoration: none;
-            font-size: 56px;
+            font-size: 46px;
             line-height: 1;
             letter-spacing: -0.01em;
         }
@@ -335,13 +339,14 @@
             right: -100%;
             width: 300px;
             height: 100vh;
-            background: var(--bg);
+            background: rgba(255, 255, 255, 0.98);
             border-left: 1px solid var(--border);
             padding: 100px 32px 32px;
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 10px;
             transition: right 0.3s;
+            box-shadow: -14px 0 28px rgba(0, 31, 84, 0.1);
         }
 
         .nav-open .nav-menu {
@@ -353,13 +358,15 @@
             text-decoration: none;
             font-size: 1.1rem;
             font-weight: 500;
-            transition: color 0.2s;
-            padding: 12px 0;
-            border-bottom: 1px solid var(--border);
+            transition: color 0.2s, background-color 0.2s;
+            padding: 12px 14px;
+            border-bottom: 1px solid transparent;
+            border-radius: var(--radius-sm);
         }
 
         .nav-menu a:hover {
             color: var(--accent);
+            background: var(--accent-light);
         }
 
         /* Hero */
@@ -458,7 +465,7 @@
 
         /* Section */
         section {
-            padding: 120px 48px;
+            padding: 110px 48px;
             max-width: 1000px;
             margin: 0 auto;
         }
@@ -483,10 +490,11 @@
 
         h2 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.2rem;
+            font-size: 2.1rem;
             font-weight: 700;
             letter-spacing: -0.01em;
             color: var(--accent);
+            line-height: 1.2;
         }
 
         .section-count {
@@ -533,6 +541,14 @@
             border: 1px solid var(--border);
             background: var(--bg);
             position: relative;
+            border-radius: var(--radius-md);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-summary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-soft);
+            border-color: #cfd8e8;
         }
 
         .project-header {
@@ -695,6 +711,8 @@
             border: none;
             font-family: inherit;
             transition: all 0.2s;
+            border-radius: 999px;
+            line-height: 1;
         }
 
         .btn-primary {
@@ -704,6 +722,8 @@
 
         .btn-primary:hover {
             background: #E66300;
+            transform: translateY(-1px);
+            box-shadow: 0 10px 24px rgba(255, 111, 0, 0.24);
         }
 
         .btn-secondary {
@@ -714,6 +734,7 @@
 
         .btn-secondary:hover {
             border-color: var(--text-muted);
+            background: #f8fafc;
         }
 
         .btn svg {
@@ -949,6 +970,7 @@
             text-align: center;
             margin: 0 auto;
             max-width: 800px;
+            border-radius: 20px;
         }
 
         .cta-banner h3 {
@@ -1139,14 +1161,14 @@
             }
 
             nav {
-                padding: 20px 24px;
+                padding: 14px 18px;
                 flex-direction: column;
                 gap: 16px;
                 align-items: flex-start;
             }
             
             .nav-name {
-                font-size: 44px;
+                font-size: 34px;
             }
 
             .nav-links {
@@ -1158,6 +1180,7 @@
             .btn {
                 justify-content: center;
                 width: 100%;
+                min-height: 48px;
             }
 
             .benefits-grid {
@@ -1199,6 +1222,10 @@
             .section-stat {
                 display: inline;
                 margin-bottom: 0;
+            }
+
+            section {
+                padding: 72px 20px;
             }
         }
     </style>
