@@ -1,4 +1,4 @@
-<!DOCTYPE html>2
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -15,31 +15,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Philip Ross | Automation Consultant | Dundee, Scotland</title>
-    <meta name="title" content="Philip Ross | Automation Consultant | Dundee, Scotland">
-    <meta name="description" content="Automation consultant in Dundee helping organisations automate repetitive tasks. 12× ROI: every hour invested saves 12 hours yearly.">
-    <meta name="keywords" content="automation consulting, Scotland, Dundee, process automation, business efficiency, workflow automation">
+    <title>Lochross | Lightweight Custom Software for Operational Workflows</title>
+    <meta name="title" content="Lochross | Lightweight Custom Software for Operational Workflows">
+    <meta name="description" content="Lochross builds practical workflow software for organisations with repetitive admin, document churn, and spreadsheet-heavy operations.">
+    <meta name="keywords" content="custom workflow software, operations automation, document workflow, local-first tooling, Scotland">
     <meta name="author" content="Philip Ross">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ros-2.github.io/">
-    <meta property="og:title" content="Philip Ross | Automation Consultant | Dundee, Scotland">
-    <meta property="og:description" content="Automation consultant in Dundee helping organisations automate repetitive tasks. 12× ROI: every hour invested saves 12 hours yearly.">
+    <meta property="og:url" content="https://lochross.com/">
+    <meta property="og:title" content="Lochross | Lightweight Custom Software for Operational Workflows">
+    <meta property="og:description" content="Practical systems that reduce repetitive admin, errors, and operational friction.">
     <meta property="og:locale" content="en_GB">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Philip Ross | Automation Consultant">
-    <meta name="twitter:description" content="Automation consultant in Dundee. 12× ROI on process automation.">
+    <meta name="twitter:title" content="Lochross | Lightweight Custom Software">
+    <meta name="twitter:description" content="Custom workflow systems for teams dealing with repetitive admin and document-heavy processes.">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://ros-2.github.io/">
+    <link rel="canonical" href="https://lochross.com/">
 
     <!-- Hreflang -->
-    <link rel="alternate" hreflang="en-gb" href="https://ros-2.github.io/">
-    <link rel="alternate" hreflang="x-default" href="https://ros-2.github.io/">
+    <link rel="alternate" hreflang="en-gb" href="https://lochross.com/">
+    <link rel="alternate" hreflang="x-default" href="https://lochross.com/">
 
     <!-- Cache control suggestions (actual caching is handled server-side) -->
     <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
@@ -51,7 +51,7 @@
         "@type": "ProfessionalService",
         "name": "Philip Ross Automation Consulting",
         "description": "Automation consulting services. I help organisations identify and automate repetitive tasks, delivering an average 12× return on time invested.",
-        "url": "https://ros-2.github.io/",
+        "url": "https://lochross.com/",
         "areaServed": [
             {
                 "@type": "Country",
@@ -190,7 +190,7 @@
             "ratingValue": "12",
             "bestRating": "20",
             "worstRating": "1",
-            "ratingCount": "5",
+            "ratingCount": "6",
             "reviewAspect": "Return on investment (hours saved per hour invested)"
         }
     }
@@ -721,6 +721,59 @@
             height: 18px;
         }
 
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .hero-points {
+            margin-top: 24px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .hero-points li {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .hero-points li::before {
+            content: "•";
+            color: var(--accent-orange);
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 28px;
+        }
+
+        .proof-card {
+            border: 1px solid var(--border);
+            padding: 24px;
+            background: var(--bg);
+        }
+
+        .proof-card strong {
+            display: block;
+            color: var(--accent);
+            font-size: 1.8rem;
+            line-height: 1;
+            margin-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .contact-methods {
             margin: 32px 0 40px 0;
             padding: 24px;
@@ -966,6 +1019,18 @@
             line-height: 1.7;
         }
 
+        .benefit-card ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .benefit-card ul li {
+            margin-bottom: 6px;
+        }
+
         .testimonials h3 {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.5rem;
@@ -1151,7 +1216,8 @@
         </button>
         <div class="nav-menu">
             <a href="/">Home</a>
-            <a href="/pages/projects.html">Past Projects</a>
+            <a href="/pages/services.html">Services</a>
+            <a href="/pages/projects.html">Case Studies</a>
             <a href="/pages/about.html">About</a>
             <a href="/pages/contact.html">Contact</a>
         </div>
@@ -1160,59 +1226,162 @@
     <main>
     <section class="hero" id="top">
         <div class="hero-content">
-            <span class="hero-label">Automation Consulting</span>
-            <h1>I find the work you shouldn't be doing. Then I automate it.</h1>
-            <p class="hero-text">Repetitive and manual tasks burn hours a week. Save time and money through automation.</p>
-            <p class="hero-credentials">Based in Scotland</p>
+            <span class="hero-label">Lightweight Custom Software</span>
+            <h1>I build practical systems that give your team time back.</h1>
+            <p class="hero-text">For organisations stuck in spreadsheets, email chains, and repetitive admin, I design and ship tools that cut manual work, reduce errors, and make operations calmer.</p>
+            <p class="hero-credentials">Based in Scotland · Working with UK teams</p>
+
+            <div class="hero-actions">
+                <a href="/pages/contact.html" class="btn btn-primary">Book a 20-min call</a>
+                <a href="/pages/projects.html" class="btn btn-secondary">View case studies</a>
+            </div>
+
+            <ul class="hero-points">
+                <li>Shipped working systems, not slide decks.</li>
+                <li>Build, handover, and support included.</li>
+                <li>Local-first mindset: your data stays under your control.</li>
+            </ul>
         </div>
-        
+
         <div class="impact-box">
-            <p class="impact-label">Return per year on every hour I invest</p>
+            <p class="impact-label">Measured annual return on delivery time</p>
             <div class="impact-ratio">
                 <span class="impact-number">12×</span>
             </div>
         </div>
     </section>
 
+    <section id="benefits">
+        <div class="section-header">
+            <div>
+                <p class="section-label">Who I Help</p>
+                <h2>Teams with messy admin and too much manual work</h2>
+            </div>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Small organisations</h3>
+                <p>You need reliable systems quickly, without heavy enterprise complexity or long delivery cycles.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Charities and professional services</h3>
+                <p>You need consistent documents, reports, and workflows so staff can focus on higher-value work.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Engineering and operations teams</h3>
+                <p>You need audit-ready records, fewer handoffs, and less time spent fixing process errors.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Leaders who want clarity</h3>
+                <p>You want one clear workflow your team can actually use, maintain, and trust day to day.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <div>
+                <p class="section-label">What I Build</p>
+                <h2>Examples of systems in production</h2>
+            </div>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Purchase order and document workflows</h3>
+                <ul>
+                    <li>Structured form capture</li>
+                    <li>Typst PDF generation</li>
+                    <li>Audit-ready storage and notifications</li>
+                </ul>
+            </div>
+            <div class="benefit-card">
+                <h3>Reporting automation</h3>
+                <ul>
+                    <li>Faster reporting with photos/data</li>
+                    <li>Cleaner outputs for stakeholders</li>
+                    <li>Less copy-paste and rework</li>
+                </ul>
+            </div>
+            <div class="benefit-card">
+                <h3>Charity and ops automation</h3>
+                <ul>
+                    <li>Grant and fundraising workflow support</li>
+                    <li>Operational tracking improvements</li>
+                    <li>Reduced process friction</li>
+                </ul>
+            </div>
+            <div class="benefit-card">
+                <h3>Local-first tooling direction</h3>
+                <ul>
+                    <li>Private cloud friendly</li>
+                    <li>Data ownership by default</li>
+                    <li>Lower SaaS sprawl over time</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <div>
+                <p class="section-label">How I Work</p>
+                <h2>Simple delivery process</h2>
+            </div>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>1. Understand workflow</h3>
+                <p>Map your current process and identify where time or quality is leaking.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>2. Design the system</h3>
+                <p>Define the smallest useful system that solves the core problem clearly.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>3. Build and test</h3>
+                <p>Implement with real examples, test edge cases, and remove failure points.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>4. Handover and support</h3>
+                <p>Document, train, and support rollout so your team can run it confidently.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding-top: 80px; max-width: 1200px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; color: var(--accent);">Proof and outcomes</h2>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">Recent projects delivered measurable time savings and cleaner operations.</p>
+        </div>
+
+        <div class="proof-grid">
+            <div class="proof-card">
+                <strong>12×</strong>
+                <p>Annual return per hour invested.</p>
+            </div>
+            <div class="proof-card">
+                <strong>51.5</strong>
+                <p>Working days saved each year across delivered projects.</p>
+            </div>
+            <div class="proof-card">
+                <strong>6</strong>
+                <p>Completed systems with live operational use.</p>
+            </div>
+            <div class="proof-card">
+                <strong>Demo</strong>
+                <p>Try a live workflow at <a href="https://demo.lochross.com" style="color: var(--accent);">demo.lochross.com</a>.</p>
+            </div>
+        </div>
+    </section>
+
     <div class="cta-banner">
-        <h3>Spending hours on repetitive tasks each week?</h3>
-        <p>I'll identify which processes could be automated and estimate the time savings.</p>
-        <a href="/pages/process.html" class="btn btn-primary">Learn more about the process</a>
+        <h3>If your team is spending hours on repeat admin, start here.</h3>
+        <p>Send a short description of your workflow and I will reply with a practical next step.</p>
+        <a href="/pages/contact.html" class="btn btn-primary">Send an enquiry</a>
     </div>
-
-    <section style="padding: 80px 48px; max-width: 1200px; margin: 0 auto;">
-        <div style="text-align: center; margin-bottom: 60px;">
-            <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; color: var(--accent);">Proven Results</h2>
-            <p style="color: var(--text-secondary); font-size: 1.1rem;">51.5 working days saved annually across 5 completed projects</p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; margin-bottom: 60px;">
-            <div style="text-align: center; padding: 32px; border: 1px solid var(--border);">
-                <div style="font-family: 'Montserrat', sans-serif; font-size: 3rem; font-weight: 800; color: var(--accent); margin-bottom: 8px;">12×</div>
-                <p style="color: var(--text-secondary);">ROI on every hour invested</p>
-            </div>
-            <div style="text-align: center; padding: 32px; border: 1px solid var(--border);">
-                <div style="font-family: 'Montserrat', sans-serif; font-size: 3rem; font-weight: 800; color: var(--accent); margin-bottom: 8px;">51.5</div>
-                <p style="color: var(--text-secondary);">Working days saved per year</p>
-            </div>
-            <div style="text-align: center; padding: 32px; border: 1px solid var(--border);">
-                <div style="font-family: 'Montserrat', sans-serif; font-size: 3rem; font-weight: 800; color: var(--accent); margin-bottom: 8px;">5</div>
-                <p style="color: var(--text-secondary);">Projects completed</p>
-            </div>
-        </div>
-
-        <div style="text-align: center;">
-            <a href="/pages/projects.html" class="btn btn-secondary" style="display: inline-block; margin-right: 16px;">View Projects</a>
-            <a href="/pages/about.html" class="btn btn-secondary" style="display: inline-block;">Learn More About Me</a>
-        </div>
-    </section>
-
-    <section style="background: var(--bg-alt); padding: 80px 48px;">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.2rem; font-weight: 700; margin-bottom: 24px; color: var(--accent);">Ready to start saving time?</h2>
-            <a href="/pages/contact.html" class="btn btn-primary">Contact Us</a>
-        </div>
-    </section>
 
     </main>
 
