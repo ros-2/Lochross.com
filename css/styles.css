@@ -17,15 +17,14 @@
     --card: #ffffff;
     --line: #e2e2e0;
     --accent: #001F54;
-    --accent-dark: #00143a;
     --accent-mid: #003580;
     --accent-light: #E6EBF5;
     --accent-soft: #e6ebf5;
     --highlight: #FF6F00;
     --highlight-soft: #FFE8D1;
-    --radius-sm: 3px;
-    --radius-md: 5px;
-    --radius-lg: 7px;
+    --radius-sm: 2px;
+    --radius-md: 3px;
+    --radius-lg: 4px;
     --shadow-soft: 0 16px 36px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 22px 42px rgba(0, 0, 0, 0.14);
 }
@@ -58,16 +57,16 @@ nav {
     top: 14px;
     left: 16px;
     right: 16px;
-    background: var(--accent-dark);
-    border: 1px solid var(--accent-mid);
+    background: #001F54;
+    border: 1px solid #001F54;
     z-index: 100;
     padding: 12px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 7px;
+    border-radius: 3px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 22px rgba(0, 31, 84, 0.22);
 }
 
 .nav-name {
@@ -598,7 +597,7 @@ section {
     font-size: 0.76rem;
     font-weight: 700;
     padding: 5px 9px;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid #d6e0f2;
 }
 
@@ -620,7 +619,7 @@ section {
     color: var(--accent);
     background: var(--highlight-soft);
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-bottom: 10px;
 }
 
@@ -1133,7 +1132,7 @@ footer .footer-note {
 
     .cta-banner {
         padding: 38px 22px;
-        border-radius: 6px;
+        border-radius: 3px;
     }
 
     .footer-nav {
