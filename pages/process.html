@@ -1,91 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM61T48RDV"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-NM61T48RDV');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Primary Meta Tags -->
-    <title>Process | Automation Consulting | Philip Ross</title>
-    <meta name="title" content="Process | Automation Consulting">
-    <meta name="description" content="My automation consulting process: free discovery call, free 1-2 day problem identification, then fixed-price project delivery. No hourly billing or surprises.">
-    <meta name="keywords" content="automation consulting services, process automation, discovery call, project pricing, Scotland automation consultant, Dundee">
-    <meta name="author" content="Philip Ross">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph / Social -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lochross.com/process.html">
-    <meta property="og:title" content="Process | Philip Ross | Automation Consultant">
-    <meta property="og:description" content="My automation consulting process and workflow.">
-    <meta property="og:locale" content="en_GB">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://lochross.com/process.html">
-
+    <title>Lochross Has Rebranded as Quickler</title>
+    <meta name="description" content="Lochross has rebranded as Quickler. You will be redirected to quickler.co shortly.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="refresh" content="5; url=https://quickler.co/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
+    <style>
+        :root {
+            --text: #111827;
+            --text-secondary: #2f3a4a;
+            --bg: #ffffff;
+            --line: #e2e2e0;
+            --accent: #001f54;
+            --accent-light: #e6ebf5;
+            --highlight: #ff6f00;
+            --highlight-soft: #ffe8d1;
+            --card: #ffffff;
+            --shadow-soft: 0 16px 36px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Host Grotesk", "Segoe UI", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top right, rgba(255, 111, 0, 0.12), transparent 28%),
+                linear-gradient(180deg, #f8fafc 0%, #ffffff 44%, #eef3fb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px;
+        }
+
+        .shell {
+            width: min(880px, 100%);
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .bar {
+            background: var(--accent);
+            color: #fff;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .brand {
+            font-family: "DM Sans", sans-serif;
+            font-size: clamp(1.3rem, 2vw, 1.7rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 8px 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+            gap: 28px;
+            padding: 40px 24px 28px;
+        }
+
+        .label {
+            display: inline-block;
+            margin-bottom: 16px;
+            padding: 7px 11px;
+            background: var(--highlight-soft);
+            color: var(--accent);
+            font-size: 0.74rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+        }
+
+        h1 {
+            font-family: "DM Sans", sans-serif;
+            color: var(--accent);
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            line-height: 1.02;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1.06rem;
+            line-height: 1.7;
+        }
+
+        .lede {
+            max-width: 40rem;
+            margin-bottom: 24px;
+        }
+
+        .countdown-copy {
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        .digits {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 26px;
+        }
+
+        .digit {
+            min-width: 56px;
+            padding: 16px 0;
+            text-align: center;
+            background: var(--card);
+            border: 1px solid var(--line);
+            box-shadow: 0 10px 24px rgba(0, 31, 84, 0.08);
+            font-family: "DM Sans", sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .digit.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 18px;
+            text-decoration: none;
+            font-weight: 700;
+            border: 1px solid var(--accent);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 26px rgba(0, 31, 84, 0.16);
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background: #fff;
+            color: var(--accent);
+        }
+
+        .target-card {
+            background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+            border: 1px solid var(--line);
+            padding: 22px;
+        }
+
+        .target-card h2 {
+            font-family: "DM Sans", sans-serif;
+            color: var(--accent);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        .target-url {
+            margin-top: 14px;
+            padding: 14px;
+            background: var(--accent-light);
+            color: var(--accent);
+            font-weight: 700;
+            word-break: break-all;
+        }
+
+        footer {
+            padding: 0 24px 24px;
+            color: var(--text-secondary);
+            font-size: 0.96rem;
+        }
+
+        @media (max-width: 760px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="/" class="nav-name">
-            <img src="/assets/icons/android-chrome-192x192.png" alt="Lochross logo" style="height: 60px; margin-right: 12px;">
-            Lochross
-        </a>
-        <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('nav-open')">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
-        <div class="nav-menu">
-            <a href="/">Home</a>
-            <a href="/pages/services.html">Services</a>
-            <a href="/pages/projects.html">Case Studies</a>
-            <a href="/pages/about.html">About</a>
-            <a href="/pages/contact.html">Contact</a>
+    <div class="shell">
+        <div class="bar">
+            <div class="brand">Lochross -> Quickler</div>
+            <div class="badge">Rebrand in progress</div>
         </div>
-    </nav>
+        <main>
+            <section>
+                <div class="label">New Name, Same Team</div>
+                <h1>Lochross has rebranded as Quickler.</h1>
+                <p class="lede">The site you were trying to reach now lives at <strong>quickler.co</strong>. We are carrying the current Lochross site experience over during the move, with a broader redesign to follow later.</p>
+                <p class="countdown-copy">Redirecting in <span id="seconds-text">5</span> seconds.</p>
+                <div class="digits" aria-hidden="true">
+                    <div class="digit active" data-digit="5">5</div>
+                    <div class="digit" data-digit="4">4</div>
+                    <div class="digit" data-digit="3">3</div>
+                    <div class="digit" data-digit="2">2</div>
+                    <div class="digit" data-digit="1">1</div>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-primary" id="go-now" href="https://quickler.co/">Go to Quickler now</a>
+                    <a class="btn btn-secondary" href="https://quickler.co/pages/contact.html">Contact Quickler</a>
+                </div>
+                <p>If the redirect does not happen automatically, use the button above.</p>
+            </section>
+            <aside class="target-card">
+                <h2>Redirect destination</h2>
+                <p>We preserve the path when possible so old Lochross links can land on the matching Quickler page.</p>
+                <div class="target-url" id="target-url">https://quickler.co/</div>
+            </aside>
+        </main>
+        <footer>
+            Lochross.com and lochross.co.uk now redirect to Quickler.
+        </footer>
+    </div>
+    <script>
+        (function () {
+            var destination = "https://quickler.co";
+            var target = destination + window.location.pathname + window.location.search + window.location.hash;
+            var fallbackTarget = destination + "/";
+            var button = document.getElementById("go-now");
+            var targetUrl = document.getElementById("target-url");
+            var secondsText = document.getElementById("seconds-text");
+            var digits = Array.prototype.slice.call(document.querySelectorAll("[data-digit]"));
+            var remaining = 5;
 
-    <section id="top" style="padding-top: 140px;">
-        <div class="section-header">
-            <div>
-                <p class="section-label">How It Works</p>
-                <h2>Process</h2>
-            </div>
-        </div>
+            button.href = target;
+            targetUrl.textContent = target;
 
-        <div class="about-text">
-            <p>Once we've identified the problems and agreed on the scope, I build the automation solution. You receive the completed system with full documentation explaining how it works, plus training sessions for your team so they understand how to use and maintain it.</p>
+            function paint(value) {
+                secondsText.textContent = String(value);
+                digits.forEach(function (node) {
+                    node.classList.toggle("active", Number(node.dataset.digit) === value);
+                });
+            }
 
-            <p><strong>Pricing:</strong> Fixed project-based pricing agreed upfront. No hourly billing or surprises. You know exactly what you'll pay before work begins.</p>
+            function go() {
+                window.location.replace(target || fallbackTarget);
+            }
 
-            <p><strong>Support included:</strong> Follow-up support to resolve any issues and ensure the system is delivering the expected time savings. Minor tweaks and adjustments included in the first month.</p>
-        </div>
-    </section>
+            paint(remaining);
 
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Get in touch</h2>
-            <p>No pressure, no obligation. Let's discuss your processes and see if automation makes sense for your organisation.</p>
-            <a href="/pages/contact.html" class="btn btn-primary">Book a 20-min workflow review</a>
-        </div>
-    </section>
-
-    <footer style="text-align: center;">
-        <p>Lochross · Scotland · <a href="mailto:philip@lochross.com">philip@lochross.com</a> · <a href="#top">Back to top ↑</a></p>
-        <p class="footer-note">Working days based on 7.5-hour calculation (37.5-hour working week)</p>
-    </footer>
-    <script src="/js/analytics-events.js"></script>
+            var timer = window.setInterval(function () {
+                remaining -= 1;
+                if (remaining <= 0) {
+                    window.clearInterval(timer);
+                    paint(1);
+                    go();
+                    return;
+                }
+                paint(remaining);
+            }, 1000);
+        }());
+    </script>
 </body>
 </html>

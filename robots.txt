@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /
 
-Sitemap: https://ros-2.github.io/sitemap.xml
+Sitemap: https://quickler.co/sitemap.xml

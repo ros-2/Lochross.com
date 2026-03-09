@@ -1,172 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM61T48RDV"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-NM61T48RDV');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Primary Meta Tags -->
-    <title>Scripture Verification System | Philip Ross | Automation Consultant</title>
-    <meta name="title" content="Scripture Verification System | Philip Ross | Automation Consultant">
-    <meta name="description" content="Automated checking of Scripture references, quotations, and translations for Christian publishers.">
-    <meta name="keywords" content="Scripture verification, Christian publishing, Bible references, editorial tools">
-    <meta name="author" content="Philip Ross">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph / Social -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lochross.com/scripture-verification.html">
-    <meta property="og:title" content="Scripture Verification System | Philip Ross | Automation Consultant">
-    <meta property="og:description" content="Automated checking of Scripture references, quotations, and translations for Christian publishers.">
-    <meta property="og:locale" content="en_GB">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://lochross.com/scripture-verification.html">
-
+    <title>Lochross Has Rebranded as Quickler</title>
+    <meta name="description" content="Lochross has rebranded as Quickler. You will be redirected to quickler.co shortly.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="refresh" content="5; url=https://quickler.co/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
+    <style>
+        :root {
+            --text: #111827;
+            --text-secondary: #2f3a4a;
+            --bg: #ffffff;
+            --line: #e2e2e0;
+            --accent: #001f54;
+            --accent-light: #e6ebf5;
+            --highlight: #ff6f00;
+            --highlight-soft: #ffe8d1;
+            --card: #ffffff;
+            --shadow-soft: 0 16px 36px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Host Grotesk", "Segoe UI", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top right, rgba(255, 111, 0, 0.12), transparent 28%),
+                linear-gradient(180deg, #f8fafc 0%, #ffffff 44%, #eef3fb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px;
+        }
+
+        .shell {
+            width: min(880px, 100%);
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .bar {
+            background: var(--accent);
+            color: #fff;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .brand {
+            font-family: "DM Sans", sans-serif;
+            font-size: clamp(1.3rem, 2vw, 1.7rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 8px 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+            gap: 28px;
+            padding: 40px 24px 28px;
+        }
+
+        .label {
+            display: inline-block;
+            margin-bottom: 16px;
+            padding: 7px 11px;
+            background: var(--highlight-soft);
+            color: var(--accent);
+            font-size: 0.74rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+        }
+
+        h1 {
+            font-family: "DM Sans", sans-serif;
+            color: var(--accent);
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            line-height: 1.02;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1.06rem;
+            line-height: 1.7;
+        }
+
+        .lede {
+            max-width: 40rem;
+            margin-bottom: 24px;
+        }
+
+        .countdown-copy {
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        .digits {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 26px;
+        }
+
+        .digit {
+            min-width: 56px;
+            padding: 16px 0;
+            text-align: center;
+            background: var(--card);
+            border: 1px solid var(--line);
+            box-shadow: 0 10px 24px rgba(0, 31, 84, 0.08);
+            font-family: "DM Sans", sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .digit.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 18px;
+            text-decoration: none;
+            font-weight: 700;
+            border: 1px solid var(--accent);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 26px rgba(0, 31, 84, 0.16);
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background: #fff;
+            color: var(--accent);
+        }
+
+        .target-card {
+            background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+            border: 1px solid var(--line);
+            padding: 22px;
+        }
+
+        .target-card h2 {
+            font-family: "DM Sans", sans-serif;
+            color: var(--accent);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        .target-url {
+            margin-top: 14px;
+            padding: 14px;
+            background: var(--accent-light);
+            color: var(--accent);
+            font-weight: 700;
+            word-break: break-all;
+        }
+
+        footer {
+            padding: 0 24px 24px;
+            color: var(--text-secondary);
+            font-size: 0.96rem;
+        }
+
+        @media (max-width: 760px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="/" class="nav-name">
-            <img src="/assets/icons/android-chrome-192x192.png" alt="Lochross logo" style="height: 60px; margin-right: 12px;">
-            Lochross
-        </a>
-        <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('nav-open')">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
-        <div class="nav-menu">
-            <a href="/">Home</a>
-            <a href="/pages/services.html">Services</a>
-            <a href="/pages/projects.html">Case Studies</a>
-            <a href="/pages/about.html">About</a>
-            <a href="/pages/contact.html">Contact</a>
+    <div class="shell">
+        <div class="bar">
+            <div class="brand">Lochross -> Quickler</div>
+            <div class="badge">Rebrand in progress</div>
         </div>
-    </nav>
+        <main>
+            <section>
+                <div class="label">New Name, Same Team</div>
+                <h1>Lochross has rebranded as Quickler.</h1>
+                <p class="lede">The site you were trying to reach now lives at <strong>quickler.co</strong>. We are carrying the current Lochross site experience over during the move, with a broader redesign to follow later.</p>
+                <p class="countdown-copy">Redirecting in <span id="seconds-text">5</span> seconds.</p>
+                <div class="digits" aria-hidden="true">
+                    <div class="digit active" data-digit="5">5</div>
+                    <div class="digit" data-digit="4">4</div>
+                    <div class="digit" data-digit="3">3</div>
+                    <div class="digit" data-digit="2">2</div>
+                    <div class="digit" data-digit="1">1</div>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-primary" id="go-now" href="https://quickler.co/">Go to Quickler now</a>
+                    <a class="btn btn-secondary" href="https://quickler.co/pages/contact.html">Contact Quickler</a>
+                </div>
+                <p>If the redirect does not happen automatically, use the button above.</p>
+            </section>
+            <aside class="target-card">
+                <h2>Redirect destination</h2>
+                <p>We preserve the path when possible so old Lochross links can land on the matching Quickler page.</p>
+                <div class="target-url" id="target-url">https://quickler.co/</div>
+            </aside>
+        </main>
+        <footer>
+            Lochross.com and lochross.co.uk now redirect to Quickler.
+        </footer>
+    </div>
+    <script>
+        (function () {
+            var destination = "https://quickler.co";
+            var target = destination + window.location.pathname + window.location.search + window.location.hash;
+            var fallbackTarget = destination + "/";
+            var button = document.getElementById("go-now");
+            var targetUrl = document.getElementById("target-url");
+            var secondsText = document.getElementById("seconds-text");
+            var digits = Array.prototype.slice.call(document.querySelectorAll("[data-digit]"));
+            var remaining = 5;
 
-    <section id="top" style="padding-top: 140px;">
-        <div class="section-header">
-            <div>
-                <p class="section-label">Product</p>
-                <h2>Scripture Verification System for Christian Publishers</h2>
-                <p style="color: #666; font-size: 1.2em; margin-top: 20px;">Automated checking of Scripture references, quotations, and translations</p>
-            </div>
-        </div>
+            button.href = target;
+            targetUrl.textContent = target;
 
-        <div style="max-width: 800px; margin: 40px auto; line-height: 1.8; color: #444;">
-            <p style="font-size: 1.1em; margin-bottom: 30px;">Lochross is developing a Scripture verification system for Christian publishers and editors who need to ensure accuracy, consistency, and transparency in biblical citations before publication.</p>
+            function paint(value) {
+                secondsText.textContent = String(value);
+                digits.forEach(function (node) {
+                    node.classList.toggle("active", Number(node.dataset.digit) === value);
+                });
+            }
 
-            <p style="margin-bottom: 30px;">The system automates a task that is currently manual, time-consuming, and error-prone: verifying that every Scripture reference and quotation in a manuscript is correct, complete, and properly attributed.</p>
+            function go() {
+                window.location.replace(target || fallbackTarget);
+            }
 
-            <h3 style="color: #1e3a5f; margin-top: 50px; margin-bottom: 20px;">The problem</h3>
-            <p style="margin-bottom: 20px;">In theological publishing, Scripture accuracy is non-negotiable.</p>
-            <p style="margin-bottom: 30px;">Yet editorial teams still spend many hours per book manually:</p>
-            <ul style="margin-left: 30px; margin-bottom: 30px;">
-                <li>Checking that references exist</li>
-                <li>Comparing quoted text against the stated translation</li>
-                <li>Identifying misquotes, partial quotations, or incorrect verses</li>
-                <li>Discovering where authors have used a different translation without stating it</li>
-                <li>Verifying paraphrases</li>
-            </ul>
-            <p style="margin-bottom: 30px;">This work is necessary, but it is also repetitive, slow, and difficult to audit after the fact.</p>
+            paint(remaining);
 
-            <h3 style="color: #1e3a5f; margin-top: 50px; margin-bottom: 20px;">What the system will do</h3>
-            <p style="margin-bottom: 20px;">The Lochross Scripture Verification System processes a manuscript and produces a separate verification document designed for editorial use.</p>
-            <p style="margin-bottom: 20px;">For every Scripture reference it:</p>
-            <ul style="margin-left: 30px; margin-bottom: 30px;">
-                <li>Confirms that the book, chapter, and verse exist</li>
-                <li>Compares the quoted text against the ESV word-for-word</li>
-                <li>Detects whether the author has actually used another translation (NIV, KJV, NKJV, CSB)</li>
-                <li>Flags deviations using a clear, colour-coded system</li>
-                <li>Generates side-by-side comparisons for review</li>
-            </ul>
-            <p style="margin-bottom: 30px;">The output is not an error list, but a structured document editors can keep open while copy-editing or proofing. This cuts out the frustration for an editor that finds themselves covering for poor proofreading</p>
-
-            <h3 style="color: #1e3a5f; margin-top: 50px; margin-bottom: 20px;">Clear, review-focused output</h3>
-            <p style="margin-bottom: 20px;">Each Scripture reference is classified using a consistent scheme:</p>
-            <ul style="margin-left: 30px; margin-bottom: 30px;">
-                <li><strong style="color: #2d9c2d;">Green</strong> – exact match with the ESV</li>
-                <li><strong style="color: #3498db;">Blue</strong> – partial quotation (intentional truncation)</li>
-                <li><strong style="color: #f39c12;">Yellow</strong> – minor deviations (punctuation, spelling, capitalisation)</li>
-                <li><strong style="color: #e74c3c;">Red</strong> – significant deviations or misquotation</li>
-            </ul>
-            <p style="margin-bottom: 30px;">The real verse will be provided for comparison and reassurance.</p>
-            <p style="margin-bottom: 30px;">This preserves editorial judgement while dramatically reducing manual checking time.</p>
-
-            <h3 style="color: #1e3a5f; margin-top: 50px; margin-bottom: 20px;">What this is (and is not)</h3>
-            <p style="margin-bottom: 20px;"><strong>This system is:</strong></p>
-            <ul style="margin-left: 30px; margin-bottom: 30px;">
-                <li>An editorial verification tool</li>
-                <li>Designed for professional Christian publishers</li>
-                <li>Focused on accuracy, traceability, and review</li>
-                <li>Translation-aware and audit-friendly</li>
-            </ul>
-            <p style="margin-bottom: 20px;"><strong>This system is not:</strong></p>
-            <ul style="margin-left: 30px; margin-bottom: 30px;">
-                <li>A theological decision engine</li>
-                <li>An automated approval system</li>
-                <li>A replacement for editors</li>
-                <li>A generative writing tool</li>
-            </ul>
-            <p style="margin-bottom: 30px;">It assists human editors; it does not replace them.</p>
-
-            <h3 style="color: #1e3a5f; margin-top: 50px; margin-bottom: 20px;">Intended users</h3>
-            <p style="margin-bottom: 20px;">The system is being developed for:</p>
-            <ul style="margin-left: 30px; margin-bottom: 30px;">
-                <li>Christian publishing houses</li>
-                <li>Theological editors and proof-readers</li>
-                <li>Publishers working primarily with the ESV, but receiving mixed-translation manuscripts</li>
-            </ul>
-            <p style="margin-bottom: 30px;">It is especially suited to publishers producing doctrinal, academic, or teaching material where Scripture precision is essential.</p>
-
-            <h3 style="color: #1e3a5f; margin-top: 50px; margin-bottom: 20px;">Development status</h3>
-            <p style="margin-bottom: 20px;">The system is currently in development planning, with architecture and workflows defined and an initial customer use-case established.</p>
-            <p style="margin-bottom: 20px;">Lochross is registering interest from:</p>
-            <ul style="margin-left: 30px; margin-bottom: 30px;">
-                <li>Publishers who want early access</li>
-                <li>Editors willing to trial the system on real manuscripts</li>
-                <li>Organisations interested in shaping the first production release</li>
-            </ul>
-            <p style="margin-bottom: 30px;">There is no obligation to purchase at this stage.</p>
-
-            <h3 style="color: #1e3a5f; margin-top: 50px; margin-bottom: 20px;">Register interest</h3>
-            <p style="margin-bottom: 20px;">If your organisation:</p>
-            <ul style="margin-left: 30px; margin-bottom: 30px;">
-                <li>Spends significant time manually verifying Scripture references</li>
-                <li>Wants greater confidence and consistency in biblical quotations</li>
-                <li>Would be interested in piloting an automated verification system</li>
-                <li>Is interested in speeding up proof reading to give more time to the quality of the content.</li> 
-            </ul>
-            <p style="margin-bottom: 30px;">You may register your interest below in the contact form. Just send an email saying "We are interested in the Scripture Verfication". </p>
-            <p style="margin-bottom: 30px;">We then will contact you with the next steps.</p>
-        </div>
-    </section>
-
-    
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Register your interest</h2>
-            <p>Click here to Scripture Verification System</p>
-            <a href="/pages/contact.html" class="btn btn-primary">Book a 20-min workflow review</a>
-        </div>
-    </section>
-
-    <footer style="text-align: center;">
-        <p>Lochross · Scotland · <a href="mailto:philip@lochross.com">philip@lochross.com</a> · <a href="#top">Back to top ↑</a></p>
-    </footer>
-    <script src="/js/analytics-events.js"></script>
+            var timer = window.setInterval(function () {
+                remaining -= 1;
+                if (remaining <= 0) {
+                    window.clearInterval(timer);
+                    paint(1);
+                    go();
+                    return;
+                }
+                paint(remaining);
+            }, 1000);
+        }());
+    </script>
 </body>
 </html>
